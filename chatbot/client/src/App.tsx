@@ -46,7 +46,7 @@ export default function App() {
     } catch (e: any) {
       setMessages((prev) => [
         ...prev,
-        { role: "assistant", content: `❌ ${e?.message ?? "Error"}` },
+        { role: "assistant", content: ` ${e?.message ?? "Error"}` },
       ]);
     } finally {
       setLoading(false);
